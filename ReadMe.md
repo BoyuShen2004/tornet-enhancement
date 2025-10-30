@@ -59,6 +59,8 @@ export KERAS_BACKEND=torch
 
 ## Results vs. the paper baseline
 
+<img src="baseline_results.png" alt="Baseline results" width="640">
+
 Paper (baseline CNN, JDM “All nulls vs confirmed”; screenshot):
 - ACC 0.9505; AUC 0.8760; AUC‑PD 0.5294; CSI 0.3487
 
@@ -151,6 +153,8 @@ Dataset and partitioning
 - Julian Day Modulo (JDM) split: compute J(te) = Julian day index of the event; train if J(te) mod 20 < 17 (~84.5%), test if ≥ 17 (~15.5%).
 - Overlap removal: optionally remove near‑duplicates within a time window (e.g., 30 min) and spatial tolerance (e.g., 0.25°) to avoid leakage.
 - Variables kept identical in our runs (DBZ/VEL/KDP/RHOHV/ZDR/WIDTH), with masks/coords carried through.
+
+<img src="class_composition.png" alt="Class composition" width="640">
 
 Paper‑reported dataset composition (203,133 samples total)
 - Random nontornadic cells: 124,766 (61.4%)
