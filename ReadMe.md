@@ -59,9 +59,8 @@ export KERAS_BACKEND=torch
 
 ## Results vs. the paper baseline
 
-<img src="baseline_results.png" alt="Baseline results" width="640">
-
 Paper (baseline CNN, JDM “All nulls vs confirmed”; screenshot):
+<img src="baseline_results.png" alt="Baseline results" width="640">
 - ACC 0.9505; AUC 0.8760; AUC‑PD 0.5294; CSI 0.3487
 
 Our enhanced evaluation (`script/tornet-enhanced-paper-partitioning_1809185.out`) — concrete numbers from the final evaluator summary (screenshot):
@@ -155,7 +154,6 @@ Dataset and partitioning
 - Variables kept identical in our runs (DBZ/VEL/KDP/RHOHV/ZDR/WIDTH), with masks/coords carried through.
 
 <img src="class_composition.png" alt="Class composition" width="640">
-
 Paper‑reported dataset composition (203,133 samples total)
 - Random nontornadic cells: 124,766 (61.4%)
 - Nontornadic tornado warnings: 64,510 (31.8%)
