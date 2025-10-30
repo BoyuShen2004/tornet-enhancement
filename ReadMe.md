@@ -2,6 +2,8 @@
 
 This document summarizes the enhancements on top of the baseline TorNet CNN, how to reproduce evaluation on the paper’s Julian Day Modulo (JDM) partitioning, and how to interpret the improvements using XAI.
 
+## **Baseline model repo:** [mit-ll/tornet](https://github.com/mit-ll/tornet)
+
 ## Baseline vs Enhanced — configuration deltas (what actually changed)
 
 Configuration (from params in scripts and run folders):
