@@ -15,7 +15,6 @@ Configuration (from params in scripts and run folders):
 | Learning Rate | 1e-4 | 1e-3 | 10× higher LR (+ ReduceLROnPlateau) |
 | Start Filters | 48 | 16 | 3× fewer filters (faster, lower memory) |
 | Loss | cce | focal_imbalanced (α=0.5, γ=1.5) | Major upgrade for class imbalance |
-| Train/Val Years | 2013–2020 / 2021–2022 | 2013–2022 / 2021–2022 | More training data |
 | Class balancing | off | on (weights + modest oversample_ratio=2.0) | Focus on rare positives |
 | Data augmentation | light | on (conservative jitters) | Diversity, regularization |
 | Scheduling | none | cosine annealing (warmup=3) + ReduceLROnPlateau | Better convergence |
