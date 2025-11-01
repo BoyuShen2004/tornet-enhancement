@@ -24,7 +24,7 @@ This document summarizes the enhancements on top of the baseline TorNet CNN, how
 
 We obtained the **TorNet dataset** (version 1.1) from Zenodo using `zenodo_get` (as recommended in the paper's GitHub repository: [mit-ll/tornet](https://github.com/mit-ll/tornet)). The dataset consists of **203,133 samples** from **2013–2022** NEXRAD WSR-88D full-resolution polarimetric weather radar data, published by MIT Lincoln Laboratory as a benchmark for tornado detection research.
 
-The dataset is organized as 10 yearly archives (one per year) plus a catalog CSV file, containing NetCDF format (`.nc`) files with multi-channel radar imagery at 120×240 spatial resolution with 2 elevation sweeps.
+The dataset is organized as 10 yearly archives (one per year) plus a catalog CSV file, containing NetCDF format (`.nc`) files. After downsampling, each sample contains a four-dimensional array with shape (T, S, R, A), where T=4 corresponds to the number of time steps, S=2 corresponds to the number of radar sweeps (elevation tilts), R=240 is the radial size, and A=120 is the azimuthal size of each radar chip.
 
 **Dataset composition**:
 - **Radar variables**: DBZ (reflectivity), VEL (velocity), KDP (specific differential phase), RHOHV (correlation coefficient), ZDR (differential reflectivity), WIDTH (spectrum width)
